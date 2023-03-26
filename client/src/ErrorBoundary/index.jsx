@@ -65,7 +65,12 @@ function ErrorBoundary() {
 
   return (
     <ErrorBoundaryContainer>
-      <ErrorBoundaryTitle>Algo de errado não está certo</ErrorBoundaryTitle>
+      <ErrorBoundaryTitle>
+        Algo de errado não está certo
+        <div>
+          <pre>{JSON.stringify(error, null, 2)}</pre>
+        </div>
+      </ErrorBoundaryTitle>
       <ErrorBoundaryActions>
         <ErrorBoundaryLink to="/">Retornar para a home</ErrorBoundaryLink>
         <ErrorBoundaryLink to="sign-out">Sair</ErrorBoundaryLink>
