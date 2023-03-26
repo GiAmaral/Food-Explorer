@@ -1,0 +1,28 @@
+:root {
+  --light-100: #ffffff;
+  --dark-400: #000a0f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--light-100);
+  background-color: var(--dark-400);
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent !important;
+}
